@@ -1,0 +1,18 @@
+<div class="loading-section" *ngIf="!items">
+  <!-- Loading bars that show when request is pending -->
+</div>
+<div *ngIf="items">
+  <ol>
+    <li *ngFor="let item of items" class="post">
+      <item class="item-block" [item]="item"></item>
+    </li>
+  </ol>
+  <div class="nav">
+    <a class="prev">
+      ‹ Prev
+    </a>
+    <a class="more">
+      More ›
+    </a>
+  <div>
+</div>
